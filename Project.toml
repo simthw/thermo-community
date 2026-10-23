@@ -1,0 +1,50 @@
+name = "Analysis"
+uuid = "6ec1d3a4-3b5e-4d31-ae64-3d7f3c0a9c20"
+authors = ["wzf"]
+version = "1.1.0"
+
+[deps]
+ArgParse = "c7e460c6-2fb9-53a9-8c5b-16f535851c63"
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+Clustering = "aaaa29a8-35af-508c-8bc3-b662a17a0fe5"
+ColorSchemes = "35d6a980-a343-548e-a6ea-1d62b119f2f4"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+DecisionTree = "7806a523-6efd-50cb-b5f6-3fa6f1930dbb"
+DifferentialEquations = "0c46a032-eb83-5123-abaf-570d42b7fbaa"
+Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
+Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
+LaTeXStrings = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+MakiePublication = "dde8697e-0d61-460d-88dd-856f66710dd1"
+MultivariateStats = "6f286f6a-111f-5878-ab1e-185364afe411"
+Polynomials = "f27b6e38-b328-58d1-80ce-0feddd5e7a45"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+SciMLBase = "0bca4576-84f4-4d90-8ffe-ffa030f20462"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+SymPy = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+
+[compat]
+CairoMakie = "0.15.14"
+Dates = "1.11.0"
+DecisionTree = "0.12.4"
+Distributed = "1.11.0"
+MakiePublication = "0.4.3"
+Printf = "1.11.0"
+Random = "1.11.0"
+SciMLBase = "2"
+Statistics = "1.11.1"
+TOML = "1.0.3"
+julia = "1.11"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

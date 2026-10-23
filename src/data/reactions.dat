@@ -1,0 +1,41 @@
+# Acidification Reactions
+acetate with bicarbonate: C6H12O6(aq) + 3 HCO3-(aq) -> 3 CH3COO-(aq) + 3 CO2(g) + 3 H2O(l)
+acetate with carbonate: C6H12O6(aq) + 3 CO32-(aq) -> 3 CH3COO-(aq) + 3 HCO3-(aq)
+lactate with bicarbonate: C6H12O6(aq) + 2 HCO3-(aq) -> 2 CH3CH(OH)COO-(aq) + 2 CO2(g) + 2 H2O(l)
+lactate with carbonate: C6H12O6(aq) + 2 CO32-(aq) -> 2 CH3CH(OH)COO-(aq) + 2 HCO3-(aq)
+butyrate with bicarbonate: C6H12O6(aq) + 1.2 HCO3-(aq) -> 1.2 CH3CH2CH2COO-(aq) + 2.4 CO2(g) + 2.4 H2O(l)
+valerate with bicarbonate: C6H12O6(aq) + 0.923076923 HCO3-(aq) -> 0.923076923 CH3CH2CH2CH2COO-(aq) + 2.307692308 CO2(g) + 2.307692308 H2O(l)
+# sulfate reduction reactions
+sulfate reduction of butyrate: CH3CH2CH2COO-(aq) + 0.5 SO42-(aq) -> 2 CH3COO-(aq) + 0.5 HS-(aq) + 0.5 H+(aq)
+sulfate reduction of propionate: CH3CH2COO-(aq) + 0.75 SO42-(aq) -> CH3COO-(aq) + HCO3-(aq) + 0.75 HS-(aq) + 0.25 H+(aq)
+acetate sulfate respiration: CH3COO-(aq) + SO42-(aq) -> 2 HCO3-(aq) + HS-(aq)
+hydrogenotrophic sulfate reduction: 4 H2(g) + SO42-(aq) + H+(aq) -> HS-(aq) + 4 H2O(l)
+sulfate reduction of lactate: CH3CH(OH)COO-(aq) + 0.5 SO42-(aq) -> CH3COO-(aq) + HCO3-(aq) + 0.5 HS-(aq) + 0.5 H+(aq)
+# methanogenesis reactions
+homoacetogenesis from bicarbonate: 2 HCO3-(aq) + 4 H2(g) + H+(aq) -> CH3COO-(aq) + 4 H2O(l)
+acetogenesis from lactate: CH3CH(OH)COO-(aq) -> 1.5 CH3COO-(aq) + 0.5 H+(aq)
+# hydrogen production reactions
+hydrogen production from valerate: CH3CH2CH2CH2COO-(aq) + 2 HCO3-(aq) -> 3 CH3COO-(aq) + H2(g) + CO2(g)
+hydrogen production from butyrate: CH3CH2CH2COO-(aq) + H2O(l) + HCO3-(aq) -> 2 CH3COO-(aq) + 2 H2(g) + CO2(g)
+hydrogen production from butyrate to bicarbonate: CH3CH2CH2COO-(aq) + 10 H2O(l) -> 4 HCO3-(aq) + 10 H2(g) + 3 H+(aq)
+hydrogen production from propionate: CH3CH2COO-(aq) + 2 H2O(l) -> CH3COO-(aq) + 3 H2(g) + CO2(g)
+hydrogen production from propionate to bicarbonate: CH3CH2COO-(aq) + 7 H2O(l) -> 3 HCO3-(aq) + 7 H2(g) + 2 H+(aq)
+hydrogen production from acetate: CH3COO-(aq) + 3 H2O(l) -> HCO3-(aq) + CO2(g) + 4 H2(g)
+hydrogen production from lactate: CH3CH(OH)COO-(aq) + H2O(l) -> CH3COO-(aq) + CO2(g) + 2 H2(g)
+# methanogenesis reactions
+hydrogenotrophic methanogenesis: 4 H2(g) + CO2(g) -> CH4(g) + 2 H2O(l)
+acetoclastic methanogenesis: CH3COO-(aq) + H2O(l) -> HCO3-(aq) + CH4(g)
+# directly coupled methanogenesis reactions: VFAs -> H2 -> CH4
+# valerate to acetate coupled methanogenesis: 4 CH3CH2CH2CH2COO-(aq) + 8 HCO3-(aq) -> 12 CH3COO-(aq) + CH4(g) + 2 H2O(l) + 3 CO2(g)
+# butyrate to acetate coupled methanogenesis: 2 CH3CH2CH2COO-(aq) + 2 HCO3-(aq) -> 4 CH3COO-(aq) + CH4(g) + CO2(g)
+# butyrate to bicarbonate coupled methanogenesis: CH3CH2CH2COO-(aq) + 5 H2O(l) + 2.5 CO2(g) -> 4 HCO3-(aq) + 2.5 CH4(g) + 3 H+(aq)
+# propionate to acetate coupled methanogenesis: 4 CH3CH2COO-(aq) + 2 H2O(l) -> 4 CH3COO-(aq) + 3 CH4(g) + CO2(g)
+# propionate to bicarbonate coupled methanogenesis: 4 CH3CH2COO-(aq) + 14 H2O(l) + 7 CO2(g) -> 12 HCO3-(aq) + 7 CH4(g) + 8 H+(aq)
+# acetate coupled methanogenesis: CH3COO-(aq) + H2O(l) -> HCO3-(aq) + CH4(g)
+# directly coupled sulfate reduction reactions: VFAs -> H2 -> H2S
+# valerate to acetate coupled sulfate reduction: 4 CH3CH2CH2CH2COO-(aq) + 8 HCO3-(aq) + SO42-(aq) + H+(aq) -> 12 CH3COO-(aq) + 4 CO2(g) + HS-(aq) + 4 H2O (l)
+# butyrate to acetate coupled sulfate reduction: 2 CH3CH2CH2COO-(aq) + 2 HCO3-(aq) + SO42-(aq) + H+(aq) -> 4 CH3COO-(aq) + 2 CO2(g) + HS-(aq) + 2 H2O(l)
+# butyrate to bicarbonate coupled sulfate reduction: CH3CH2CH2COO-(aq) + 2.5 SO42-(aq) -> 4 HCO3-(aq) + 0.5 H+(aq) + 2.5 HS-(aq)
+# propionate to acetate coupled sulfate reduction: 4 CH3CH2COO-(aq) + 3 SO42-(aq) + 3 H+(aq) -> 4 CH3COO-(aq) + 4 CO2(g) + 3 HS-(aq) + 4 H2O(l)
+# propionate to bicarbonate coupled sulfate reduction: 4 CH3CH2COO-(aq) + 7 SO42-(aq) -> 12 HCO3-(aq) + H+(aq) + 7 HS-(aq)
+# acetate coupled sulfate reduction: CH3COO-(aq) + SO42-(aq) + H+(aq) -> HCO3-(aq) + CO2(g) + HS-(aq) + H2O(l)

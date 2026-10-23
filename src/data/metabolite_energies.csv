@@ -1,0 +1,16 @@
+formula,name,dGf0_kJ_per_mol,dHf0_kJ_per_mol,source
+C6H12O6(aq),Glucose,-917.22,-2805,Noor et al. 2013
+HCO3-(aq),Bicarbonate,-586.85,-692.0,Wagman et al. 1968
+CH3COO-(aq),Acetate,-369.31,-484.1,Noor et al. 2013
+CO2(g),Carbon Dioxide(g),-394.38,-393.5,"Thauer et al., 1977"
+H2O(l),Water,-237.13,-285.8,Noor et al. 2013
+SO42-(aq),Sulfate,-744.6,-909.6,Heijnen et al. 2010
+HS-(aq),Hydrogen Sulfide,12.05,-65.6,Kleerebezem and van Loosdrecht 2010
+H+(aq),Hydrogen Ion,0.0,0.0,"Thauer et al., 1977"
+CH3CH(OH)COO-(aq),Lactate,-517.81,-684.5,Noor et al. 2013
+CH3CH2CH2COO-(aq),Butyrate,-352.3,-535.6,"Lebedeva, 1964"
+CH3CH2COO-(aq),Propionate,-361.1,-509.6,"Martin and Andon, 1982"
+CH3CH2CH2CH2COO-(aq),Valerate,-344.34,-558.9,"Lebedeva, 1964"
+H2(g),Hydrogen(g),0,0,"Chase, 1998"
+CH4(g),Methane,-34.4,-89.04,Wagman et al. 1982
+CO32-(aq),Carbonate,-527.9,-677.1,Wagman et al. 1968
