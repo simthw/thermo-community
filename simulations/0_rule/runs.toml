@@ -1,0 +1,77 @@
+# Run-set registry for Analysis.
+#
+# Each entry registers a batch of raw simulation directories under a stable,
+# date-stamped name. Paths are relative to Analysis/ unless absolute.
+#
+# Usage: figure scripts select a dataset explicitly, e.g.
+#   julia --project=Analysis Analysis/src/figures/dissipation_rate.jl --set full_ensemble_2026_08_01
+#
+# Status convention:
+#   candidate  — validated and reproducible, but not yet used as the paper baseline
+#   canonical  — the accepted baseline for figures/claims (promote only after review)
+
+[paths]
+output_root = "simulations"
+figure_root = "results"
+
+[sets.full_ensemble_2026_08_01]
+description = "Theta-on 100-seed x 5-SO4 ensemble (SO4 10/30/100/300/1000 mg/L)."
+kind = "simulation_sweep"
+status = "candidate"
+thermodynamic_feedback = true
+paired_seeds = true
+varying_config_keys = ["sulfate_mg_L"]
+dirs = [
+  { label = "SO4_10",   so4_mg_L = 10.0,   path = "simulations/2026-08-01T075236234Z" },
+  { label = "SO4_30",   so4_mg_L = 30.0,   path = "simulations/2026-08-01T081038883Z" },
+  { label = "SO4_100",  so4_mg_L = 100.0,  path = "simulations/2026-08-01T082254004Z" },
+  { label = "SO4_300",  so4_mg_L = 300.0,  path = "simulations/2026-08-01T083355858Z" },
+  { label = "SO4_1000", so4_mg_L = 1000.0, path = "simulations/2026-08-01T084218698Z" },
+]
+
+[sets.full_ensemble_2026_08_01.outputs]
+dissipation_rate_dir = "results/full_ensemble_2026_08_01/dissipation_rate"
+dissipation_csv = "results/full_ensemble_2026_08_01/dissipation_rate/dissipation_rate.csv"
+rf_attribution_dir = "results/full_ensemble_2026_08_01/rf_attribution"
+
+[sets.theta_ablation_2026_08_03]
+description = "Theta-off ablation, 100 seeds x 5 SO4 (thermodynamic_feedback=false)."
+kind = "ablation_sweep"
+status = "candidate"
+thermodynamic_feedback = false
+paired_seeds = true
+varying_config_keys = ["sulfate_mg_L"]
+control_set = "full_ensemble_2026_08_01"
+dirs = [
+  { label = "SO4_10",   so4_mg_L = 10.0,   path = "simulations/ablation_theta/2026-10-16T074822196Z" },
+  { label = "SO4_30",   so4_mg_L = 30.0,   path = "simulations/ablation_theta/2026-10-16T074925678Z" },
+  { label = "SO4_100",  so4_mg_L = 100.0,  path = "simulations/ablation_theta/2026-10-16T075007596Z" },
+  { label = "SO4_300",  so4_mg_L = 300.0,  path = "simulations/ablation_theta/2026-10-16T075050922Z" },
+  { label = "SO4_1000", so4_mg_L = 1000.0, path = "simulations/ablation_theta/2026-10-16T075131813Z" },
+]
+
+[sets.theta_ablation_2026_08_03.outputs]
+dissipation_rate_dir = "results/full_ensemble_2026_08_01/ablation_theta/dissipation_rate"
+dissipation_csv = "results/full_ensemble_2026_08_01/ablation_theta/dissipation_rate/dissipation_rate.csv"
+flux_regime_dir = "results/full_ensemble_2026_08_01/ablation_theta/flux_regime"
+h2_srb_diagnostic_dir = "results/full_ensemble_2026_08_01/ablation_theta/h2_srb_diagnostic"
+
+[sets.adm1_ablation_2026_08_03]
+description = "Deterministic five-guild baseline (ADM1-like ablation), one strain per guild (seed 0), 5-SO4."
+kind = "baseline_sweep"
+status = "candidate"
+thermodynamic_feedback = true
+paired_seeds = true
+varying_config_keys = ["sulfate_mg_L"]
+control_set = "full_ensemble_2026_08_01"
+dirs = [
+  { label = "SO4_10",   so4_mg_L = 10.0,   path = "simulations/ablation_adm1/2026-10-16T074555482Z-SO4_10" },
+  { label = "SO4_30",   so4_mg_L = 30.0,   path = "simulations/ablation_adm1/2026-10-16T074555482Z-SO4_30" },
+  { label = "SO4_100",  so4_mg_L = 100.0,  path = "simulations/ablation_adm1/2026-10-16T074555482Z-SO4_100" },
+  { label = "SO4_300",  so4_mg_L = 300.0,  path = "simulations/ablation_adm1/2026-10-16T074555482Z-SO4_300" },
+  { label = "SO4_1000", so4_mg_L = 1000.0, path = "simulations/ablation_adm1/2026-10-16T074555482Z-SO4_1000" },
+]
+
+[sets.adm1_ablation_2026_08_03.outputs]
+dissipation_rate_dir = "results/full_ensemble_2026_08_01/ablation_adm1/dissipation_rate"
+dissipation_csv = "results/full_ensemble_2026_08_01/ablation_adm1/dissipation_rate/dissipation_rate.csv"
